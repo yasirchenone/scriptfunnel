@@ -10,56 +10,6 @@ const scripts = [
         reviews: 210,
         priceType: "VIP Premium",
         isFree: false
-    },
-    {
-        title: "QR Attendance System Pro",
-        category: "management",
-        image: "qr_attendance_system_1778694204667.png",
-        tags: ["Premium", "Management"],
-        rating: 5.0,
-        reviews: 127,
-        priceType: "Premium Plan",
-        isFree: false
-    },
-    {
-        title: "LogiStock Inventory Manager",
-        category: "management",
-        image: "inventory_management_system_1778695517518.png",
-        tags: ["Premium", "Automation"],
-        rating: 4.8,
-        reviews: 151,
-        priceType: "Weekly Plan",
-        isFree: false
-    },
-    {
-        title: "EduLink Student Portal",
-        category: "education",
-        image: "student_portal_ui_1778695594455.png",
-        tags: ["Premium", "Education"],
-        rating: 4.7,
-        reviews: 141,
-        priceType: "VIP Premium",
-        isFree: false
-    },
-    {
-        title: "Synergy CRM Dashboard",
-        category: "automation",
-        image: "business_management_dashboard_1778696105272.png",
-        tags: ["Premium", "Automation"],
-        rating: 4.9,
-        reviews: 89,
-        priceType: "Premium Plan",
-        isFree: false
-    },
-    {
-        title: "Basic Contact Form Script",
-        category: "free",
-        image: "media__1778693868307.png",
-        tags: ["Free", "Automation"],
-        rating: 4.5,
-        reviews: 32,
-        priceType: "Free",
-        isFree: true
     }
 ];
 
