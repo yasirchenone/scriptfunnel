@@ -1,3 +1,5 @@
+const WHATSAPP_NUMBER = "+923237900211"; // Updated to match index.html
+
 const scripts = [
     {
         title: "QR Attendance System Pro",
@@ -69,6 +71,9 @@ function renderScripts(filter = 'all', search = '') {
         card.className = 'card animate-in';
         card.style.animationDelay = `${index * 0.1}s`;
         
+        const whatsappMsg = encodeURIComponent(`Hi AM, I am interested in the "${s.title}" script. Can you provide more details?`);
+        const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER.replace('+', '')}?text=${whatsappMsg}`;
+
         card.innerHTML = `
             <img src="${s.image}" alt="${s.title}" class="card-image">
             <div class="card-content">
@@ -84,7 +89,10 @@ function renderScripts(filter = 'all', search = '') {
                 <div class="card-footer">
                     <a href="#" class="btn btn-primary">Preview</a>
                     <a href="#" class="btn btn-secondary">About</a>
-                    <a href="#" class="btn btn-contact">Contact for Customization</a>
+                    <a href="${whatsappUrl}" target="_blank" class="btn btn-contact">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        Contact for Customization
+                    </a>
                 </div>
             </div>
         `;

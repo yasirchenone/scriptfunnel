@@ -243,14 +243,66 @@ header {
 
 .btn-contact {
     grid-column: span 2;
-    background: var(--secondary);
+    background: #25d366; /* WhatsApp Green */
     color: white;
     margin-top: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
 }
 
 .btn:hover {
     opacity: 0.9;
     filter: brightness(1.1);
+    transform: translateY(-1px);
+}
+
+/* Floating WhatsApp Button */
+.whatsapp-float {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 60px;
+    height: 60px;
+    background-color: #25d366;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    z-index: 1000;
+    transition: var(--transition);
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.whatsapp-float::after {
+    content: "Contact Us";
+    position: absolute;
+    right: 75px;
+    background: var(--surface);
+    color: var(--text-main);
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition);
+    box-shadow: var(--shadow-md);
+}
+
+.whatsapp-float:hover::after {
+    opacity: 1;
+    visibility: visible;
 }
 
 /* Animations */
@@ -268,4 +320,6 @@ header {
     .nav-content { flex-direction: column; gap: 1rem; }
     .search-bar { max-width: 100%; }
     .stats-banner { flex-direction: column; text-align: center; }
+    .whatsapp-float { bottom: 1.5rem; right: 1.5rem; width: 50px; height: 50px; font-size: 1.5rem; }
+    .whatsapp-float::after { display: none; }
 }
