@@ -2,6 +2,16 @@ const WHATSAPP_NUMBER = "+923237900211"; // Updated to match index.html
 
 const scripts = [
     {
+        title: "AI ERP With Google sheets and Appscripts",
+        category: "management",
+        image: "ai_erp_dashboard.png",
+        tags: ["Premium", "Automation"],
+        rating: 5.0,
+        reviews: 210,
+        priceType: "VIP Premium",
+        isFree: false
+    },
+    {
         title: "QR Attendance System Pro",
         category: "management",
         image: "qr_attendance_system_1778694204667.png",
